@@ -1,4 +1,5 @@
 ---
+import { Me } from '../components/Me';
 ---
 
 <html lang="en">
@@ -12,6 +13,8 @@
     <style>
       html {
         background-color: #010101;
+
+        margin: 0;
       }
 
       body {
@@ -36,7 +39,10 @@
       }
     </style>
   </head>
+
   <body>
+    <Me client:only/>
+
     <h1>hey, i'm manitej!</h1>
     <p>I do a lot of things. I'm not sure why.</p>
   </body>
