@@ -1,49 +1,21 @@
 ---
-import { Me } from '../components/Me';
+import { Card } from '../components/Card';
+import { ManitejImage } from '../components/ManitejImage';
+import '../components/index.css';
 ---
-
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <title>manitej</title>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} >
+        <title>manitej</title>
+    </head>
 
-    <style>
-      html {
-        background-color: #010101;
-
-        margin: 0;
-      }
-
-      body {
-        height: 100vh;
-
-        margin-top: min(10%, 100px);
-        margin-right: 10%;
-        margin-bottom: min(10%, 100px);
-        margin-left: 10%;
-      }
-
-      h1 {
-        font-family: 'Inter', sans-serif;
-        font-size: 2rem;
-        color: #fff;
-      }
-
-      p {
-        font-family: 'Inter', sans-serif;
-        font-size: 1rem;
-        color: #fff;
-      }
-    </style>
-  </head>
-
-  <body>
-    <Me client:only/>
-
-    <h1>hey, i'm manitej!</h1>
-    <p>I do a lot of things. I'm not sure why.</p>
-  </body>
+    <body>
+        <div class="cards">
+            <ManitejImage />
+            <Card title="About" body="/about" />
+        </div>
+    </body>
 </html>
