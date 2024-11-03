@@ -1,0 +1,86 @@
+html, body {
+    background-color: #010101;
+
+    margin: 0;
+
+    min-height: 100%;
+}
+
+main {
+    width: max(500px, 50%);
+
+    padding-top: 10px;
+    
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: calc(1ex / 0.42);
+    margin: calc(1ex / 0.42) 0;
+
+    margin-top: 3rem;
+    margin-bottom: 0;
+
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+p, a {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+p, li {
+    font-size: 1em;
+    line-height: calc(1ex / 0.32);
+    margin: calc(1ex / 0.32) 0;
+}
+
+p a, li a {
+    text-decoration: none;
+    color: #a0fcff;
+
+    transition: 0.3s;
+}
+
+p a:hover, li a:hover {
+    text-shadow: rgb(255, 200, 0) 0 0 10px;
+}
+
+p a:visited, li a:visited {
+    color: #c0acff
+}
+
+canvas {
+    box-shadow: 0px 0px 512px rgba(255, 255, 255, 0.15);
+
+    width: 500px;
+    margin-left: auto;
+}
+
+ul {
+    margin-top: 0;
+    color: #fff
+}
+
+/* Nav Bar */
+
+nav {
+    list-style-type: none;
+    margin: 25px;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 22px;
+    text-decoration: none;
+
+    font-size: 1.25em;
+    font-family: 'Inter', sans-serif;
+}
