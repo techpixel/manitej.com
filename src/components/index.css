@@ -52,11 +52,18 @@ p a:visited, li a:visited {
     color: #c0acff
 }
 
-canvas {
+.me {
     box-shadow: 0px 0px 512px rgba(255, 255, 255, 0.15);
 
+    height: 500px;
     width: 500px;
     margin-left: auto;
+    margin-right: auto;
+}
+
+.react-p5-wrapper {
+    height: 500px;
+    width: 500px;
 }
 
 ul {
