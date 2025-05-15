@@ -1,9 +1,12 @@
 ---
 import "../components/index.css";
 import Navbar from "../components/navbar.tsx";
+
+// @ts-ignore
+import { ClientRouter } from "astro:transitions";
 ---
 
-<html lang="en">
+<html lang="en" transition:animate={'none'}>
     <head>
         <meta charset="utf-8" />
         <link rel="icon" type="image/png" href="/favicon.png" />
@@ -23,6 +26,7 @@ import Navbar from "../components/navbar.tsx";
         <meta property="og:image:height" content="300" />
 
         <title>manitej</title>
+        <ClientRouter />
 
         <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
