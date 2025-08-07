@@ -44,7 +44,7 @@ k.usePostEffect("crt", () => ({
 const INVERSE = -1;
 const FLAT = 0;
 const EXPAND = 1.25;
-const CONTRACT = 0.5;
+const CONTRACT = 0;
 
 const caption = document.getElementById("caption") as HTMLElement;
 
@@ -121,7 +121,9 @@ const caption = document.getElementById("caption") as HTMLElement;
     ]);
 
     function updateColor() {
-        const palette = iwanthue(4);
+        const palette = iwanthue(4, {
+            clustering: "force-vector"
+        });
 
         rectTL.color = k.Color.fromHex(palette[0]);
         rectTR.color = k.Color.fromHex(palette[1]);
@@ -129,7 +131,11 @@ const caption = document.getElementById("caption") as HTMLElement;
         rectBR.color = k.Color.fromHex(palette[3]);
     }
 
-    updateColor();
+    // updateColor();
+    rectBR.color = k.Color.fromHex('#b28f3b');
+    rectBL.color = k.Color.fromHex('#966fbb');
+    rectTR.color = k.Color.fromHex('#62a966');
+    rectTL.color = k.Color.fromHex('#c7535e')
 
     await k.tween(
         INVERSE,
@@ -217,7 +223,8 @@ const caption = document.getElementById("caption") as HTMLElement;
     });
 
     let lock = false;
-    k.onClick(async () => {
+    
+    const clickFn = async () => {
         if (lock) return;
         lock = true;
 
@@ -244,6 +251,8 @@ const caption = document.getElementById("caption") as HTMLElement;
         )
 
         lock = false;
-    });
+    };
 
+    k.onClick(clickFn);
+    k.onKeyPressRepeat('space', clickFn);
 })();
