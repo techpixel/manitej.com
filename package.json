@@ -1,21 +1,16 @@
 {
-    "name": "website",
-    "type": "module",
-    "scripts": {
-        "build": "vite build",
-        "dev": "vite",
-        "preview": "vite preview",
-        "zip": "bun run build && mkdir -p dist && zip -r dist/game.zip dist -x \"**/.DS_Store\"",
-        "check": "tsc"
-    },
-    "dependencies": {
-        "color-palette-creator": "^0.0.7",
-        "iwanthue": "^2.0.0",
-        "kaplay": "^3001.0.19"
-    },
-    "devDependencies": {
-        "@types/node": "^24.2.0",
-        "typescript": "^5.9.2",
-        "vite": "^7.0.6"
-    }
+  "dependencies": {
+    "gsap": "^3.13.0",
+    "warpjs": "^1.0.8"
+  },
+  "name": "manitej.com",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
 }
