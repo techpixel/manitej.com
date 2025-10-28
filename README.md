@@ -1,27 +1,15 @@
-# Folder structure
+# manitej.com
 
-- `src` - source code for your kaplay project
-- `dist` - distribution folder, contains your index.html, built js bundle and static assets
+To install dependencies:
 
-
-## Development
-
-```sh
-$ bun run dev
+```bash
+bun install
 ```
 
-will start a dev server at http://localhost:8000
+To run:
 
-## Distribution
-
-```sh
-$ bun run build
+```bash
+bun run index.ts
 ```
 
-will build your js files into `dist/`
-
-```sh
-$ bun run zip
-```
-
-will build your game and package into a .zip file, you can upload to your server or itch.io / newground etc.
+This project was created using `bun init` in bun v1.2.22. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.

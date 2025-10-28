@@ -1,0 +1,46 @@
+html, body {
+    background-color: black;
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#svg-element {
+	overflow: visible;
+    width: 100vw;
+
+    translate: 0 -16px;
+}
+
+/* .youre {
+    fill: white;
+}
+
+.on {
+    fill: #00FFFF;
+}
+
+.manitej {
+    fill: #FF3BFF;
+}
+
+.dot {
+    fill: white;
+}
+
+.com {
+    fill: #00FFFF;
+} */
+
+.youre, .on, .manitej, .dot, .com {
+    fill: white;
+}
