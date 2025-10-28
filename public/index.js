@@ -1,5 +1,3 @@
-import Warp from 'warpjs'
-
 // const svg = document.getElementById('svg-element')
 // const warp = new Warp(svg)
 
